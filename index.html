@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+        /*-------------导航栏--------------------------*/
+        .header
+        {
+            width:1349px;
+            height:200px;
+            background-image:url("image/背景.jpg");
+            background-size: cover;
+        }
+        .header .header_left
+        {
+            width:349px;
+            height:200px;
+            float:left;
+        }
+        .header .header_left img
+        {
+            width:349px;
+            height:200px;
+        }
+
+
+        .header .header_right
+        {
+            width:1000px;
+            height:200px;
+            float:right;
+        }
+        .header .header_right .nav
+        {
+            width:1000px;
+            height:100px;
+        }
+        .header .header_right .nav ul
+        {
+            width:1000px;
+            height:100px;
+        }
+        .header .header_right .nav ul li
+        {
+            list-style:none;
+            float:left;
+            margin-left:100px;
+            line-height: 100px;
+        }
+        .header .header_right .nav ul li a
+        {
+            font-size:25px;
+            color:coral;
+        }
+        .header .header_right .logo
+        {
+            width:1000px;
+            height:100px;
+        }
+
+        /*-------------内容框--------------------------*/
+        .content
+        {
+            width:1349px;
+            height:10000px;
+            background-color:yellow;
+        }
+
+        /*-------------底部超链接-----------------------*/
+        .footer
+        {
+            width:1349px;
+            height:100px;
+            background-color:pink;
+        }
+    </style>
+</head>
+<body>
+<!--      导航栏开始        -->
+   <div class="header">
+       <div class="header_left">
+           <img src="image/shouye.jpg" />
+       </div>
+       <div class="header_right">
+           <div class="nav">
+               <ul>
+                  <li><a href="">登录</a></li>
+                  <li><a href="">注册</a></li>
+                  <li><a href="">账号管理</a></li>
+                  <li><a href="">说一说</a></li>
+                  <li><a href="">淘宝者</a></li>
+               </ul>
+           </div>
+           <div class="logo"></div>
+       </div>
+   </div>
+<!--      内容开始          -->
+   <div class="content"></div>
+<!--      底部超链接        -->
+   <div class="footer"></div>
+</body>
+</html>
