@@ -1,1 +1,492 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商家信息</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        /*------------商家搜索---------------*/
+        .header
+        {
+            width:1349px;
+            height:150px;
+            text-align: center;
+            line-height: 150px;
+        }
+        .header input[type=text]
+        {
+            width:700px;
+            height:40px;
+        }
+        .header input[type=submit]
+        {
+            width:100px;
+            height:40px;
+        }
+
+        /*------------推荐优质商家-----------*/
+        .content
+        {
+            width:1349px;
+            height:9700px;
+        }
+        .content .content_top
+        {
+            width:1349px;
+            height:50px;
+            text-align: center;
+            line-height: 180px;
+            background-color:rosybrown;
+        }
+        .content .content_top p
+        {
+            font-size: 25px;
+        }
+        .content .content_button
+        {
+            width:1349px;
+            height:9650px;
+        }
+    /*---------------------------------*/
+        .content .content_button .list1
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list1 ul
+        {
+            width:1349px;
+            height:500px;
+        }
+        .content .content_button .list1 ul li
+        {
+            list-style: none;
+            float:left;
+        }
+        .content .content_button .list1 ul li:nth-child(1)
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list1 ul li:nth-child(2)
+        {
+            width:849px;
+            height:500px;
+        }
+        .content .content_button .list1 ul li img
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list1 ul li span
+        {
+            font-size:10px;
+        }
+        /*-----------------------------------------*/
+        .content .content_button .list2
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list2 ul
+        {
+            width:1349px;
+            height:500px;
+        }
+        .content .content_button .list2 ul li
+        {
+            list-style:none;
+            float:left;
+        }
+        .content .content_button .list2 ul li:nth-child(1)
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list2 ul li:nth-child(2)
+        {
+            width:849px;
+            height:500px;
+        }
+        .content .content_button .list2 ul li img
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list2 ul li span
+        {
+            font-size:10px;
+        }
+
+        /*-----------------------------------------*/
+        .content .content_button .list3
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list3 ul
+        {
+            width:1349px;
+            height:500px;
+        }
+        .content .content_button .list3 ul li
+        {
+            list-style:none;
+            float:left;
+        }
+        .content .content_button .list3 ul li:nth-child(1)
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list3 ul li:nth-child(2)
+        {
+            width:849px;
+            height:500px;
+        }
+        .content .content_button .list3 ul li img
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list3 ul li span
+        {
+            font-size:10px;
+        }
+
+        /*------------------------------------------*/
+        .content .content_button .list4
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list4 ul
+        {
+            width:1349px;
+            height:500px;
+        }
+        .content .content_button .list4 ul li
+        {
+            list-style:none;
+            float:left;
+        }
+        .content .content_button .list4 ul li:nth-child(1)
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list4 ul li:nth-child(2)
+        {
+            width:849px;
+            height:500px;
+        }
+        .content .content_button .list4 ul li img
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list4 ul li span
+        {
+            font-size:10px;
+        }
+        /*-------------------------------------------------*/
+        .content .content_button .list5
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list5 ul
+        {
+            width:1349px;
+            height:500px;
+        }
+        .content .content_button .list5 ul li
+        {
+            list-style:none;
+            float:left;
+        }
+        .content .content_button .list5 ul li:nth-child(1)
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list5 ul li:nth-child(2)
+        {
+            width:849px;
+            height:500px;
+        }
+        .content .content_button .list5 ul li img
+        {
+            width:500px;
+            height:500px;
+        }
+        .content .content_button .list5 ul li span
+        {
+            font-size:10px;
+        }
+        /*--------------------------------------------*/
+        .content .content_button .list6
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list7
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list8
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list9
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list10
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list11
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list12
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list13
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list14
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list15
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list16
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list17
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list18
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        .content .content_button .list19
+        {
+            width:1349px;
+            height:500px;
+            margin-top:8px;
+            border: 1px solid darkgray;
+        }
+        /*------------关于我们---------------*/
+        .footer
+        {
+            width:1349px;
+            height:150px;
+            background: silver;
+        }
+    </style>
+</head>
+<body>
+<!--商家搜索-->
+<div class="header">
+    <input type="text" />
+    <input type="submit" value="搜索"/>
+</div>
+<!--推荐优质商家的信息-->
+<div class="content">
+    <div class="content_top">
+        <p>优质商家</p>
+    </div>
+    <div class="content_button">
+       <div class="list1">
+           <ul>
+               <li><a href="https://www.jd.com/"><img src="../image/jingd.jpg"/></a></li>
+               <li>
+                       <span>
+                           1998年6月18日，刘强东先生在中关村创业，成立京东公司。
+
+2001年6月，京东成为光磁产品领域最具影响力的代理商，销售量及影响力在行业内首屈一指。 2004年1月，京东开辟电子商务领域创业实验田，京东多媒体网正式开通，启用新域名。 　　2004年7月 京东在全国首创即时拍卖系统——京东拍卖场正式开业，目前已经成为各大IT电子商务网 站争相模仿对象之一。
+
+2005年11月，京东多媒体网日订单处理量稳定突破500个。
+
+2006年1月，京东宣布进军上海，成立上海全资子公司。
+
+2006年6月，京东开创业内先河，全国第一家以产品为主体对象的专业博客系统――京东产品博客系统正式开放。
+
+2006年6月，京东在由第三方电子支付公司网银在线与中国计算机报联合主办的“网银杯” 2006超级网商评选活动中，荣获最受欢迎的IT产品网商称号。
+
+2007年5月，京东广州全资子公司成立，全力开拓华南市场。广州全资子公司的成立代表着京东由北京、上海、广州三地为基础覆盖全国的销售网络的形成。
+
+2007年6月，京东商城日订单处理量突破3000个。
+
+2007年6月，成功改版后，京东多媒体网正式更名为京东商城，以全新的面貌屹立于国内B2C市场。
+
+2007年6月，京东正式启动全新域名，并成功改版。
+
+2007年7月，京东建成北京、上海、广州三大物流体系，总物流面积超过5万平方米。
+
+2007年8月，京东赢得国际著名风险投资基金——今日资本的青睐，首批融资千万美金。 　　2007年10月，京东商城在北京、上海、广州三地启用移动POS上门刷卡服务，开创了中国电子商务的先河。
+
+2008年6月，京东商城在2008年初涉足销售平板电视，并于6月将空调、冰洗、电视等大家电产品线逐一扩充完毕。标志着京东公司在建司十周年之际完成了3C产品的全线搭建，成为名副其实的3C网购平台。
+
+2009年1月，京东商城获得来自今日资本、雄牛资本以及亚洲著名投资银行家梁伯韬先生的私人公司共计2100万美元的联合注资。也是2008年金融危机爆发以来，中国电子商务企业获得的第一笔融资。
+
+2009年2月，京东商城尝试出售特色上门服务，此举成为探索B2C增值服务领域的重要突破，也是商品多元化的又一体现。
+
+2009年3月，京东商城单月销售额突破2亿元，成为国内首家也是唯一一家月销量突破2亿元大关的B2C电子商务公司。
+
+2009年6月，京东商城单月销售额突破3亿元，与2007年全年销售额持平。同时，日订单处理能力突破20000单。
+
+2010年12月23日，京东商城团购频道于12月23日正式上线，京东商城注册用户均可直接参与团购。
+
+2011年4月1日，刘强东宣布完成C2轮融资，投资方俄罗斯的DST、老虎基金等六家基金和一些社会知名人士融资金额总计15亿美元，其中11亿美元已经到账。
+
+2012年5月29日，京东商城集团旗下日韩品牌综合类网上购物商城——迷你挑正式上线！　　2012年11月27日，京东叫板阿里巴巴 涉水供应链金融领域。
+
+                       </span>
+               </li>
+           </ul>
+       </div>
+        <div class="list2">
+            <ul>
+                <li><a href="https://login.taobao.com/"><img src="../image/taobao.jpg"/> </a></li>
+                <li>
+                    <span>
+                        2003年5月10日，淘宝网成立，由阿里巴巴集团投资创办。10月推出第三方支付工具“支付宝”，以“担保交易模式”使消费者对淘宝网上的交易产生信任。2003年全年成交总额3400万元。
+2004年，推出“淘宝旺旺”，将即时聊天工具和网络购物相联系起来。
+2005年，淘宝网超越eBay易趣，并且开始把竞争对手们远远抛在身后。5月，淘宝网超越日本雅虎，成为亚洲最大的网络购物平台。2005年成交额破80亿元，超越沃尔玛。
+2006年，淘宝网成为亚洲最大购物网站，就在这一年，淘宝网第一次在中国实现了一个可能——互联网不仅仅是作为一个应用工具存在，它将最终构成生活的基本要素，调查数据显示，每天有近900万人上淘宝网"逛街"。
+2007年，淘宝网不再是一家简单的拍卖网站，而是亚洲最大的网络零售商圈。这一年，淘宝网全年成交额突破400亿，成中国第二大综合卖场。
+2008年，淘宝B2C新平台淘宝商城（天猫前身）上线；汶川地震捐款平台上线，共筹得网友捐款超2000万；9月份，淘宝网单月交易额突破百亿大关。
+2009年，已成为中国最大的综合卖场，全年交易额达到2083亿元。
+2010年1月1日 淘宝网发布全新首页，此后聚划算上线，然后又推出一淘网。
+2011年6月16日，阿里巴巴集团旗下淘宝公司分拆为三个独立的公司，即沿袭原C2C业务的淘宝网（taobao），平台型B2C电子商务服务商淘宝商城(tmall）和一站式购物搜索引擎一淘网（etao）。在新的架构中，淘宝分拆后的三家公司采用总裁加董事长的机制运营。
+2012年1月11日上午，淘宝商城正式宣布更名为“天猫”。2012年3月29日天猫发布全新Logo形象。2012年11月11日，天猫借光棍节大赚一笔，宣称13小时卖100亿，创世界纪录。
+2012年4月20日，《IT时代周刊》出版的第08期封面文章曝光称，中国知名电商淘宝内部员工存在集体性腐败行为。就此，阿里巴巴集团副总裁陶然表示，不能因为个体的事件就夸大成为团体腐败。陶然表示，淘宝在两年前就设立了廉政部，对举报行为进行调查，核实后会进行处理。
+2012年，11月11日，淘宝加天猫平台，将网购单日记录再次刷新为191亿元。
+2013年，阿里调整为25个事业部，阿里巴巴通过其全资子公司阿里巴巴(中国)，以5.86亿美元购入新浪微博公司发行的优先股和普通股，占新浪微博公司全稀释摊薄后总股份的约18%，将淘宝电商和SNS的结合进行到底。
+2015年12月24日，阿里巴巴集团与国家认证认可监督管理委员会信息中心正式签署合作框架协议，双方共同推出“云桥”数据共享机制，阿里巴巴成为首家直接接入国家CCC认证信息数据库的电商平台。阿里巴巴旗下天猫、淘宝、1688等电商平台将导入CCC认证信息数据库实现自动校验和标注，从而避免无证以及假冒认证产品。
+2016年1月27日，“成交记录”模块被正式隐藏，但原先销量、评价等信息不会消失，仍正常累积。”阿里巴巴公关部吴铭欣说，“取消(成交记录)后，将会减少不法分子通过成交记录进行的诈骗情形。”同时，如果消费者想要了解销量，只需将鼠标放到“交易成功”上，就可看到近30天的已出售件数。
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <li><a href="https://www.vip.com/"><img src="../image/weipinhui.jpg"/></a></li>
+                <li>
+                    <span>
+                        唯品会2012年3月23日将登陆美国纽交所，自2011年中国概念股在美国资本市场爆出诚信危机后，中国公司赴美IPO窗口被冰封，唯品会的IPO具有风向标作用，备受关注。唯品会自2012年2月18日递交上市申请后，进展比较顺利，不久公布发行价区间并进行路演，但是认购情况不是太乐观，3月23日上市当天公布发行价为6.5美元，远低于此前8.5-10.5美元的发行价区间。
+那么，这家开创中国闪购模式的新兴电商到底如何呢？本报告从唯品会的发展历程丶行业和商业模式丶基于盈利前景探讨的财务解析丶存在的风险因素丶管理团队和股权结构等进行全面解读。
+一丶唯品会的发展历程：成立3年即赴美上市
+唯品会全称为广州唯品会信息科技有限公司， 2008年8月成立于广东，同年旗下网站唯品会(vipshop)上线，两位创始人沈亚和洪晓波都是温州的传统商人，此前曾合伙做电子外贸生意，唯品会还有三个创始投资人,都是沈亚和洪晓波在长江商学院的同学，也是老乡，5人筹集3000万人民币作为创始资金。
+唯品会的商业模式为“名牌折扣+限时抢购+正品保险”，即“闪购”模式，开山鼻祖为法国Vente Privee，其成立于2001年，而后美国网站Gilt对这种商业模式进行了改造，专注于奢侈品品牌的打折销售。唯品会创业早期也在奢侈品品牌折扣销售的做过尝试，但奢侈品网购在中国受用户群小以及奢侈品消费习惯，并不是最佳的网络打折商品；唯品会2008年年底开始推国内二丶三线品牌的服装，订单开始上升，唯品会此后将市场定位为国内二丶三线品牌的产品，很多用户也是来自二三线城市。
+唯品会此后迎来快速增长，2009年唯品会的订单开始增至7.1万单，2010年更是剧增至92.7万单；2010年12月唯品会获得红杉和DCM的联合风险投资，融资金额约为2000万美元； 2011年5月，唯品会再次获得红杉和DCM的联合风险投资5000万美元。
+2012年2月18日唯品会向美国SEC提交上市申请，3月23日将登陆纽交所，发行价6.5美元，融资约7150万美元。
+二丶唯品会的爆炸式增长：新兴的闪购模式+中国网络折扣零售的市场机会
+自成立的这三年多来，唯品会可谓实现了爆炸式增长：2009-2011年营收分别为280.48万丶3258.2万丶2.27亿美元，年复合增长为800%，最近一个季度（2011年Q4）营收同比增长502%到1.05亿美元，单个季度营收突破1亿美元大关；营收背后是用户数和订单数的大幅增长，2009-2011年唯品会活跃客户量分别为3.8万人丶25.5万人和133万人；总订单量分别为7.1万个丶92.7万个和726.9万个。
+那么唯品会为何能实现这种爆炸式的增长呢？合适的市场时机用合适的模式做了合适的事。具体分析如下：
+1丶 新兴的闪购模式：唯品会是线上时尚品牌B2C网站，向消费者提供时装丶护肤品丶箱包丶皮具丶配饰丶香水等商品，并以比零售大幅优惠的折扣价销售，在网站首页以每日精选的形式推送折价商品（北京时间每天早上10:00），通常设置数量（如每人限量2件同类商品丶一个购物车一次限20件商品）和购买时间限制。
+唯品会采用的是“闪购”（flash sales）这种新兴的商业模式，整个运作过程大概是这样的：采购团队负责和品牌商建立合作关系，以极的价格价采购供应商的库存产品，在采购环节，一般只需要预付10-15%的押金（部分长期关系良好的厂商甚至可以不收取押金）；然后唯品会在网站上以“闪购”丶“特卖会”等限时抢购的方式进行促销活动；活动结束后，唯品会可以将剩下为卖完的商品退给供应商（促销活动结束后15天内可退），整个过程大概40-50天结束。
+闪购等限时抢购形式适合折扣业：（1）品牌刚打折时很多人去买，但是很快无法吸引更多顾客，打折的效应很快递减，而限时抢购的模式有助于提升商品的新鲜度，唯品会每天用闪购这样的形式可以不停刺激消费，甚至会让用户“成瘾”，培养一种消费习惯；（2）对于品牌供应商而言，抢购这种模式具有高频丶量大的特点，可以帮助供应商较快处理库存商品；（3）对于唯品会而言，由于“闪购模式”库存预付的保证金低丶卖不出的商品可以退给供应商丶库存周转快，使得唯品会对运营资金的要求比较低，资金周转快，运营杠杆比较高，有利于在短时间内爆发。
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <li><a href="https://www.suning.com/"><img src="../image/suning.jpg" /></a> </li>
+                <li>
+                    <span>
+
+苏宁易购， [1]  是苏宁易购集团股份有限公司旗下新一代B2C网上购物平台，现已覆盖传统家电、3C电器、日用百货等品类。2011年，苏宁易购强化虚拟网络与实体店面的同步发展，不断提升网络市场份额。
+未来三年，苏宁易购将依托强大的物流、售后服务及信息化支持，继续保持快速的发展步伐；到2020年，苏宁易购计划实现3000亿元的销售规模，成为中国领先的B2C平台之一。目前位居中国B2C市场份额前三强。总部位于南京。2015年8月17日苏宁易购正式入驻天猫。
+2017年11月，苏宁官方正式宣布，成立苏宁易购汽车公司。
+2018年1月14日，苏宁云商发布公告，拟计划将“苏宁易购”这一苏宁智慧零售的渠道品牌名称升级为公司名称，对公司中文名称、英文名称、证券简称等拟进行变更。 [1]
+
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="list5"></div>
+        <div class="list6"></div>
+        <div class="list7"></div>
+        <div class="list8"></div>
+        <div class="list9"></div>
+        <div class="list10"></div>
+        <div class="list11"></div>
+        <div class="list12"></div>
+        <div class="list13"></div>
+        <div class="list14"></div>
+        <div class="list15"></div>
+        <div class="list16"></div>
+        <div class="list17"></div>
+        <div class="list18"></div>
+        <div class="list19"></div>
+    </div>
+</div>
+<!--关于我们-->
+<div class="footer"></div>
+</body>
+</html>
